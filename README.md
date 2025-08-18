@@ -30,6 +30,18 @@ Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edi
 - **PostgreSQL** - Robust database
 - **Real-time subscriptions** - Live updates
 
+## 🖼️ Proje Görselleri
+
+### Ana Sayfa
+![SwiftNote Studio Hero Banner](src/assets/hero-banner.jpg)
+
+### Özellikler
+![Features Showcase](src/assets/features-showcase.jpg)
+
+### Responsive Tasarım
+![Responsive Design](src/assets/responsive-design.jpg)
+
+
 ## 🚀 Kurulum
 
 ### Gereksinimler
