@@ -7,11 +7,11 @@
 @layer base {
   :root {
     /* Background System */
-    --background: 240 15% 4%;
-    --background-secondary: 240 12% 6%;
-    --background-tertiary: 240 10% 8%;
+    --background: 240 10% 12%;
+    --background-secondary: 240 8% 16%;
+    --background-tertiary: 240 6% 20%;
     --foreground: 240 5% 95%;
-    --foreground-secondary: 240 5% 75%;
+    --foreground-secondary: 240 5% 80%;
 
     /* Brand Colors */
     --primary: 259 94% 67%;
@@ -25,16 +25,16 @@
     --accent-glow: 200 94% 85%;
     
     /* Card System */
-    --card: 240 12% 6%;
-    --card-hover: 240 10% 8%;
+    --card: 240 8% 18%;
+    --card-hover: 240 6% 22%;
     --card-foreground: 240 5% 95%;
-    --card-border: 240 8% 15%;
+    --card-border: 240 8% 25%;
 
     /* Interactive Elements */
-    --muted: 240 8% 12%;
-    --muted-foreground: 240 5% 65%;
-    --border: 240 8% 15%;
-    --input: 240 8% 12%;
+    --muted: 240 6% 20%;
+    --muted-foreground: 240 5% 70%;
+    --border: 240 8% 25%;
+    --input: 240 6% 20%;
     --ring: 259 94% 67%;
 
     /* Status Colors */
