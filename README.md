@@ -2,7 +2,6 @@
 
 Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edin, etiketleyin, arayın ve organize edin.
 
-![SwiftNote Studio](https://via.placeholder.com/800x400/7c3aed/ffffff?text=SwiftNote+Studio)
 
 ## ✨ Özellikler
 
