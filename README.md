@@ -1,73 +1,171 @@
-# Welcome to your Lovable project
+# 📝 SwiftNote Studio
 
-## Project info
+Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edin, etiketleyin, arayın ve organize edin.
 
-**URL**: https://lovable.dev/projects/835a607e-e9cf-47d5-9b18-736e92da0a59
+![SwiftNote Studio](https://via.placeholder.com/800x400/7c3aed/ffffff?text=SwiftNote+Studio)
 
-## How can I edit this code?
+## ✨ Özellikler
 
-There are several ways of editing your application.
+- 🎨 **Modern Tasarım**: Glass morphism efektleri ve smooth animasyonlar
+- 📁 **Kategori Sistemi**: Notlarınızı kategorilere ayırın
+- 🏷️ **Etiket Sistemi**: Notlarınıza etiketler ekleyin
+- 🔍 **Güçlü Arama**: Başlık, içerik ve etiketlerde arama yapın
+- ⭐ **Favoriler**: Önemli notlarınızı favorilere ekleyin
+- 💾 **Otomatik Kaydetme**: Verileriniz güvenle saklanır
+- 📱 **Responsive Tasarım**: Tüm cihazlarda mükemmel çalışır
+- ⚡ **Hızlı Performance**: Instant arama ve smooth geçişler
 
-**Use Lovable**
+## 🛠️ Teknolojiler
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/835a607e-e9cf-47d5-9b18-736e92da0a59) and start prompting.
+### Frontend
+- **React 18** - Modern UI framework
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Zustand** - State management
+- **Lucide Icons** - Beautiful icon set
+- **date-fns** - Date formatting
+- **Vite** - Fast build tool
 
-Changes made via Lovable will be committed automatically to this repo.
+### Backend & Database
+- **Supabase** - Backend as a Service
+- **PostgreSQL** - Robust database
+- **Real-time subscriptions** - Live updates
 
-**Use your preferred IDE**
+## 🚀 Kurulum
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Gereksinimler
+- Node.js 18+ 
+- npm veya yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Adımlar
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. **Projeyi klonlayın**
+```bash
+git clone <repository-url>
+cd swiftnote-studio
 ```
 
-**Edit a file directly in GitHub**
+2. **Bağımlılıkları yükleyin**
+```bash
+npm install
+# veya
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **Development server'ı başlatın**
+```bash
+npm run dev
+# veya
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. **Tarayıcınızda açın**
+```
+http://localhost:8080
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📖 Kullanım
 
-## What technologies are used for this project?
+### Not Oluşturma
+1. **"Yeni Not"** butonuna tıklayın
+2. Başlık ve içerik ekleyin
+3. Kategori seçin
+4. Etiketler ekleyin (opsiyonel)
+5. **"Kaydet"** butonuna tıklayın
 
-This project is built with:
+### Not Düzenleme
+1. Düzenlemek istediğiniz nota tıklayın
+2. **"Düzenle"** butonuna tıklayın
+3. Değişikliklerinizi yapın
+4. **"Kaydet"** ile kaydedin
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Arama ve Filtreleme
+- **Arama çubuğu**: Notlarınızda hızlı arama yapın
+- **Kategoriler**: Soldaki kategorilerden filtreleme yapın
+- **Favoriler**: Favori notlarınızı görüntüleyin
 
-## How can I deploy this project?
+### Klavye Kısayolları
+- `Ctrl + Enter`: Notu kaydet
+- `Esc`: Düzenlemeyi iptal et
 
-Simply open [Lovable](https://lovable.dev/projects/835a607e-e9cf-47d5-9b18-736e92da0a59) and click on Share -> Publish.
+## 🏗️ Proje Yapısı
 
-## Can I connect a custom domain to my Lovable project?
+```
+src/
+├── components/          # React bileşenleri
+│   ├── ui/             # Shadcn/ui bileşenleri
+│   ├── Header.tsx      # Üst başlık ve arama
+│   ├── Sidebar.tsx     # Kategori navigasyonu
+│   ├── NoteList.tsx    # Not listesi
+│   └── NoteEditor.tsx  # Not editörü
+├── store/              # Zustand store
+│   └── noteStore.ts    # Not state yönetimi
+├── types/              # TypeScript tip tanımları
+│   └── note.ts         # Not tipleri
+├── pages/              # Sayfa bileşenleri
+│   └── Index.tsx       # Ana sayfa
+└── lib/                # Yardımcı fonksiyonlar
+    └── utils.ts        # Utility fonksiyonları
+```
 
-Yes, you can!
+## 🎨 Tasarım Sistemi
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Renkler
+- **Primary**: Deep Purple (`#7c3aed`)
+- **Accent**: Cyan Blue (`#06b6d4`)
+- **Background**: Dark theme with gradients
+- **Glass Effects**: Backdrop blur ile modern görünüm
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Animasyonlar
+- **Fade In**: Sayfa yüklenirken
+- **Slide Up**: Liste elemanları için
+- **Scale In**: Modal ve popup'lar için
+- **Hover Effects**: Interactive elemanlar için
+
+## 🔧 Geliştirme
+
+### Available Scripts
+
+```bash
+# Development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint code
+npm run lint
+
+# Type check
+npm run type-check
+```
+
+### Code Style
+- **ESLint** ile kod kalitesi kontrolü
+- **Prettier** ile kod formatlaması
+- **TypeScript** ile tip güvenliği
+
+## 🤝 Katkıda Bulunma
+
+1. Fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
+
+## 📞 İletişim
+
+- **Email**: info@swiftnotestudio.com
+- **Website**: [swiftnotestudio.com](https://swiftnotestudio.com)
+- **GitHub**: [github.com/swiftnotestudio](https://github.com/swiftnotestudio)
+
+---
+
+**SwiftNote Studio** ile notlarınızı modern ve etkili bir şekilde yönetin! ✨

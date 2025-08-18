@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* SwiftNote Studio Design System - Modern Note Taking App */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Background System */
+    --background: 240 15% 4%;
+    --background-secondary: 240 12% 6%;
+    --background-tertiary: 240 10% 8%;
+    --foreground: 240 5% 95%;
+    --foreground-secondary: 240 5% 75%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Brand Colors */
+    --primary: 259 94% 67%;
+    --primary-foreground: 240 15% 4%;
+    --primary-glow: 259 94% 85%;
+    --primary-dark: 259 94% 55%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Accent System */
+    --accent: 200 94% 67%;
+    --accent-foreground: 240 15% 4%;
+    --accent-glow: 200 94% 85%;
+    
+    /* Card System */
+    --card: 240 12% 6%;
+    --card-hover: 240 10% 8%;
+    --card-foreground: 240 5% 95%;
+    --card-border: 240 8% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Interactive Elements */
+    --muted: 240 8% 12%;
+    --muted-foreground: 240 5% 65%;
+    --border: 240 8% 15%;
+    --input: 240 8% 12%;
+    --ring: 259 94% 67%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 5% 95%;
+    --success: 142 76% 56%;
+    --warning: 48 96% 65%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--background-secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card) / 0.8), hsl(var(--card-hover) / 0.6));
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Glass Effects */
+    --glass-bg: hsl(var(--card) / 0.7);
+    --glass-border: hsl(var(--border) / 0.3);
+    --glass-shadow: 0 8px 32px hsl(var(--primary) / 0.1);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Animation Values */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,42 +76,86 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  }
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+@layer base {
+  * {
+    @apply border-border;
+  }
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+@layer components {
+  /* Glass Card Component */
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition-smooth);
+  }
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+  .glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px hsl(var(--primary) / 0.15);
+  }
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+  /* Gradient Text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+  /* Smooth Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
