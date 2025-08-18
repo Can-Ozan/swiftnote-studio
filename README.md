@@ -33,7 +33,7 @@ Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edi
 ## 🖼️ Proje Görselleri
 
 ### Ana Sayfa
-![SwiftNote Studio Hero Banner](<img width="1872" height="839" alt="Ekran görüntüsü 2025-08-18 204946" />)
+![SwiftNote Studio Hero Banner]()
 
 
 
@@ -47,7 +47,7 @@ Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edi
 
 1. **Projeyi klonlayın**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Can-Ozan/swiftnote-studio.git
 cd swiftnote-studio
 ```
 
