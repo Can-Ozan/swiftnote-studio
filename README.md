@@ -33,13 +33,8 @@ Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edi
 ## 🖼️ Proje Görselleri
 
 ### Ana Sayfa
-![SwiftNote Studio Hero Banner](src/assets/hero-banner.jpg)
+![SwiftNote Studio Hero Banner](<img width="1872" height="839" alt="Ekran görüntüsü 2025-08-18 204946" src="https://github.com/user-attachments/assets/bdab8ac7-44ad-4a66-9f39-4604017a8126" />)
 
-### Özellikler
-![Features Showcase](src/assets/features-showcase.jpg)
-
-### Responsive Tasarım
-![Responsive Design](src/assets/responsive-design.jpg)
 
 
 ## 🚀 Kurulum
