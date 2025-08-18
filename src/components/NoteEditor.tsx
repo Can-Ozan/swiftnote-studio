@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { useNoteStore } from '@/store/noteStore';
 import { cn } from '@/lib/utils';
 
-export const NoteEditor = () => {
+export function NoteEditor() {
   const { 
     selectedNote, 
     isEditing, 
@@ -261,4 +261,4 @@ export const NoteEditor = () => {
       </div>
     </div>
   );
-};
+}

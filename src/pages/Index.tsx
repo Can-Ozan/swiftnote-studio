@@ -3,7 +3,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { NoteList } from '@/components/NoteList';
 import { NoteEditor } from '@/components/NoteEditor';
 
-const Index = () => {
+export default function Index() {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-7xl mx-auto">
@@ -25,6 +25,4 @@ const Index = () => {
       </div>
     </div>
   );
-};
-
-export default Index;
+}

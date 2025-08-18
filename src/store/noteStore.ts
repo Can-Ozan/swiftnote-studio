@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { Note, Category } from '@/types/note';
+import { Note, Category } from '@/types';
 
 interface NoteStore {
   notes: Note[];

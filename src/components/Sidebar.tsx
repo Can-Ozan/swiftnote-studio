@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { useNoteStore } from '@/store/noteStore';
 import { cn } from '@/lib/utils';
 
-export const Sidebar = () => {
+export function Sidebar() {
   const { categories, selectedCategory, setSelectedCategory, notes } = useNoteStore();
 
   const favoriteCount = notes.filter(note => note.is_favorite).length;
@@ -72,4 +72,4 @@ export const Sidebar = () => {
       </div>
     </aside>
   );
-};
+}

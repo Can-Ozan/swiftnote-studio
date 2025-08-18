@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
 import { tr } from 'date-fns/locale';
 
-export const NoteList = () => {
+export function NoteList() {
   const { 
     notes, 
     selectedCategory, 
@@ -149,4 +149,4 @@ export const NoteList = () => {
       ))}
     </div>
   );
-};
+}

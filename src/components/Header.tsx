@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useNoteStore } from '@/store/noteStore';
 
-export const Header = () => {
+export function Header() {
   const { searchQuery, setSearchQuery, setSelectedNote, setIsEditing } = useNoteStore();
 
   const handleNewNote = () => {
@@ -44,4 +44,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+}
