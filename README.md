@@ -162,9 +162,9 @@ Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için `LICENSE` dosyasın
 
 ## 📞 İletişim
 
-- **Email**: info@swiftnotestudio.com
-- **Website**: [swiftnotestudio.com](https://swiftnotestudio.com)
-- **GitHub**: [github.com/swiftnotestudio](https://github.com/swiftnotestudio)
+- **Email**: yusufcanozan9@gmail.com
+- **GitHub**: https://github.com/Can-Ozan/swiftnote-studio.git
+
 
 ---
 
