@@ -33,7 +33,7 @@ Modern ve dinamik bir not defteri web uygulaması. Notlarınızı kategorize edi
 ## 🖼️ Proje Görselleri
 
 ### Ana Sayfa
-![SwiftNote Studio Hero Banner]()
+![SwiftNote Studio Arayüzü](src/images/arayuzu.png)
 
 
 
